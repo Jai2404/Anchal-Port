@@ -1,0 +1,139 @@
+.hero {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.flex-for {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-for p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.image-flex img {
+    height: 500px;
+    width: 550px;
+}
+
+.hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.hero p {
+    width: 40%;
+    font-size: 34px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.hero-connect, .hero-resume {
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.hero-connect {
+    color: aliceblue;
+    background: linear-gradient(270deg, #DF8908 10%, #b415ff 100%);
+}
+
+.hero-resume {
+    color: whitesmoke;
+    border: 3px solid rgb(212, 45, 185);
+    background: black;
+}
+
+.hero-connect:hover {
+    border: 5px solid rgb(20, 19, 19);
+}
+
+.hero-resume:hover {
+    border: 5px solid rgb(12, 12, 12);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-flex img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .hero p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .image-flex img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        width: 80%;
+    }
+
+    .hero p {
+        width: 80%;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 15px 25px;
+        font-size: 20px;
+    }
+}
