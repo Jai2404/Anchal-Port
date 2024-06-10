@@ -1,7 +1,7 @@
 
 .socials {
   
-    justify-content: center; /
+    justify-content: center; 
     align-items: center; 
     gap: 20px; 
 
@@ -28,6 +28,23 @@ text-decoration: dotted;
 .socials a:hover {
     color: #b415ff; 
 }
+
+.socials button {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    border: solid rgb(0, 0, 0) 2px;
+    background-color: rgb(1, 7, 8);
+    color: #ffffff;
+}
+
+.socials button:hover {
+    background-color: aqua;
+    color: black;
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out, border cubic-bezier(0.25, 0.46, 0.45, 0.94) ease-in-out;
+    border: solid black 2px;
+}
+
 
 @media (max-width: 600px) {
     .socials {

@@ -6,6 +6,10 @@
     align-items: center;
     background-color: black;
     padding: 10px;
+    position: fixed; /* Fix the Navbar at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
 }
 
 .navbar {
@@ -25,7 +29,7 @@
 }
 
 .nav-menu.active {
-    max-height: 500px; /* Adjust this value according to your needs */
+    max-height: 500px; 
 }
 
 .nav-item {
@@ -41,7 +45,7 @@
 }
 
 .nav-item a:hover {
-    background-color: grey;
+    background-color: rgb(26, 17, 17);
     border-radius: 5px;
 }
 
@@ -62,12 +66,10 @@
 
 @media (min-width: 769px) {
     .menu-toggle {
-      display: none;
+        display: none;
     }
-  
-    .nav-menu {
-      display: flex;
-    }
-  }
 
-  
+    .nav-menu {
+        display: flex;
+    }
+}

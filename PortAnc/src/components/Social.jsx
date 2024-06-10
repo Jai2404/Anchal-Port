@@ -2,12 +2,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
 import React from "react";
 
-import { faGithub, faInstagram, faLinkedin,faTwitter } from '@fortawesome/free-brands-svg-icons'; // Removed unused icons
+import { faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'; // Removed unused icons
 import './Social.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Social = () => {
     const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleOnClick = () => {
+        navigate('/contact')
+    }
 
     useEffect(() => {
         const { search } = location;
@@ -37,7 +42,8 @@ const Social = () => {
             <a href="" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
-
+<br></br>
+            <button className="contactMe" onClick={handleOnClick}>Connet with me</button>
         </div>
     );
 };
